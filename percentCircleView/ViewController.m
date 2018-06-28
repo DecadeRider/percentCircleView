@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "JackPercentView.h"
 
-@interface ViewController ()
+@interface ViewController ()<CAAnimationDelegate>
+
+@property (weak, nonatomic) IBOutlet JackPercentView *percentView;
 
 @end
 
@@ -16,8 +19,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    float a = 10.0,b = 20.0,c = 30.0,d = 40.0;
+    float total = a + b + c + d;
+    self.percentView.circleArray =@[ @{@"strokeColor":[UIColor blackColor],@"precent":@(a/total)},
+                                     @{@"strokeColor":[UIColor redColor],@"precent":@(b/total)},
+                                     @{@"strokeColor":[UIColor orangeColor],@"precent":@(c/total)},
+                                     @{@"strokeColor":[UIColor greenColor],@"precent":@(d/total)}
+                                     ];
+    
 }
+
+
+
+
+
+
 
 
 - (void)didReceiveMemoryWarning {

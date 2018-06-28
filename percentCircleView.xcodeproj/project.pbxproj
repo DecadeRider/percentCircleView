@@ -15,6 +15,7 @@
 		89F6433620C4E0FC007646CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F6433520C4E0FC007646CF /* main.m */; };
 		89F6434020C4E0FC007646CF /* percentCircleViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F6433F20C4E0FC007646CF /* percentCircleViewTests.m */; };
 		89F6434B20C4E0FD007646CF /* percentCircleViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F6434A20C4E0FD007646CF /* percentCircleViewUITests.m */; };
+		89F6435B20C4E18F007646CF /* JackPercentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F6435A20C4E18F007646CF /* JackPercentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		89F6434620C4E0FC007646CF /* percentCircleViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = percentCircleViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F6434A20C4E0FD007646CF /* percentCircleViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = percentCircleViewUITests.m; sourceTree = "<group>"; };
 		89F6434C20C4E0FD007646CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89F6435920C4E18F007646CF /* JackPercentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JackPercentView.h; sourceTree = "<group>"; };
+		89F6435A20C4E18F007646CF /* JackPercentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JackPercentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		89F6432520C4E0EA007646CF /* percentCircleView */ = {
 			isa = PBXGroup;
 			children = (
+				89F6435820C4E16A007646CF /* percentView */,
 				89F6432620C4E0EA007646CF /* AppDelegate.h */,
 				89F6432720C4E0EA007646CF /* AppDelegate.m */,
 				89F6432920C4E0EA007646CF /* ViewController.h */,
@@ -130,6 +134,15 @@
 				89F6434C20C4E0FD007646CF /* Info.plist */,
 			);
 			path = percentCircleViewUITests;
+			sourceTree = "<group>";
+		};
+		89F6435820C4E16A007646CF /* percentView */ = {
+			isa = PBXGroup;
+			children = (
+				89F6435920C4E18F007646CF /* JackPercentView.h */,
+				89F6435A20C4E18F007646CF /* JackPercentView.m */,
+			);
+			path = percentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89F6432B20C4E0EA007646CF /* ViewController.m in Sources */,
+				89F6435B20C4E18F007646CF /* JackPercentView.m in Sources */,
 				89F6433620C4E0FC007646CF /* main.m in Sources */,
 				89F6432820C4E0EA007646CF /* AppDelegate.m in Sources */,
 			);
